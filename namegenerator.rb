@@ -39,7 +39,7 @@ def chooseName()
         "Wendy Doan",
         "Wilkins Cheng"]        
     puts `clear`
-    randomChoice = all_the_humans[rand(all_the_humans.length - 1)]
+    randomChoice = all_the_humans[rand(all_the_humans.length)]
     bar = TTY::ProgressBar.new("Preparing a name... [:bar]", total: 30)
     30.times do
       sleep(2)
